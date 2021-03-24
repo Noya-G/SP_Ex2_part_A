@@ -37,8 +37,8 @@ TEST_CASE("Test for a row"){
     Board board;
     string right = "right massege";
     string wrong = "worng massege";
-    board.post(14,15,Direction::Horizontal,right);
-    CHECK(board.read(14,0,Direction::Horizontal,17)==right);
+    board.post(354,567,Direction::Horizontal,right);
+    CHECK(board.read(354,567,Direction::Horizontal,17)==right);
 
 }
 
@@ -46,8 +46,8 @@ TEST_CASE("Test for a column"){
     Board board;
     string right = "right massege";
     string wrong = "worng massege";
-    board.post(14,15,Direction::Vertical,right);
-    CHECK(board.read(14,0,Direction::Vertical,17)==wrong);
+    board.post(354,567,Direction::Vertical,right);
+    CHECK(board.read(354,567,Direction::Vertical,17)==wrong);
 
 }
 
