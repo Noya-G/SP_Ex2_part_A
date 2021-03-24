@@ -8,7 +8,7 @@ namespace ariel {
         uint colums;
     public:
         Board() {}
-        ~Board() { }
+        ~Board() {}
         void post(int row, int column, Direction direction,std::string message);
         static std::string read(int row, int column, Direction direction, int length);
         void show();
